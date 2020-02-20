@@ -73,6 +73,7 @@ class FavouritePage extends StatelessWidget {
               return Center(child: Text('Empty'));
             }
             return ListView.separated(
+                padding: EdgeInsets.only(top: 10),
                 separatorBuilder: (context, index) => SizedBox(height: 10),
                 itemBuilder: (context, index) => _buildItemUser(
                     context, model.users[index],
